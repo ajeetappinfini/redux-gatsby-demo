@@ -22,6 +22,13 @@ function reducer(state, action) {
         count: state.count + 1,
       }
     }
+    case "DEC_COUNT": {
+      return {
+        ...state,
+        count: 0,
+        theme: "light"
+      }
+    }
     case "RESET_COUNT": {
       return {
         ...state,

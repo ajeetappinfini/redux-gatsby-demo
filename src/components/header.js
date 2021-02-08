@@ -58,6 +58,14 @@ const Header = ({ siteTitle }) => {
         <button
           type="button"
           onClick={() => {
+            dispatch({ type: "DEC_COUNT" })
+          }}
+        >
+          DEC BY ONE
+        </button>
+        <button
+          type="button"
+          onClick={() => {
             dispatch({ type: "RESET_COUNT" })
           }}
         >
